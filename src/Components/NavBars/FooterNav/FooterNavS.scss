@@ -1,0 +1,21 @@
+.FooterNav.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: inherit ;
+  width: 100vw;
+  border-top: solid 1px #343a40;
+
+  .navItems{
+    padding-top: .5rem;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navItem {
+    padding: 1rem;
+    border: solid 2px #6610f2;
+    border-radius: 50%;
+  }
+}
