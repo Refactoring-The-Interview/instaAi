@@ -1,14 +1,17 @@
 import {
   Routes
 } from "react-router-dom";
-import { NavBar } from "../NavBar/NavBar";
+
+import { FooterNav } from "../NavBars/FooterNav/FooterNav";
+import { HeaderNav } from "../NavBars/HeaderNav/HeaderNav";
 import './AppS.scss';
 
 
 export const App = () => {
 
   return <div className="App">
-    <NavBar/>
+    <HeaderNav/>
+    <FooterNav/>
     <Routes>
 
     </Routes>

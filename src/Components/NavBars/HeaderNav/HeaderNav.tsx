@@ -1,12 +1,10 @@
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Navbar from 'react-bootstrap/Navbar';
-import ProfileDefault from '../../Assets/RoboProfilePic.jpeg';
-import './NavBarS.scss';
+import { Container, Image, Navbar } from 'react-bootstrap';
+import ProfileDefault from '../../../Assets/RoboProfilePic.jpeg';
+import './HeaderNavS.scss';
 
-export const NavBar = () => {
+export const HeaderNav = () => {
   return (
-    <Navbar className="Navbar"  fixed='top'>
+    <Navbar className="Navbar" fixed='top'>
       <Container>
         <Navbar.Brand href="#home" className='NavAppName'>InstaAi</Navbar.Brand>
         <Navbar.Toggle />
