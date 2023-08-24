@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { ReactNode, createContext, useState } from "react";
 import { PictureProps } from "./types";
 
 interface MyPictureContextProperties {
@@ -11,4 +11,21 @@ export const MyPictureContext = createContext<MyPictureContextProperties>({
     setPictures: () => {},
 });
 
-export const MyPicturesContextProvider = () => {};
+interface Props {
+    children: ReactNode;
+}
+
+export const MyPicturesContextProvider = ({ children }: Props) => {
+    const [pictures, setPictures] = useState<PictureProps[]>([
+        {
+            upVotes: 0,
+            downVotes: 0,
+        },
+    ]);
+
+    return (
+        <MyPictureContext.Provider value={{ pictures, setPictures }}>
+            {children}
+        </MyPictureContext.Provider>
+    );
+};
