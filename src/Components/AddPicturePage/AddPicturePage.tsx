@@ -1,3 +1,7 @@
 export const AddPicturePage = () => {
-    return <>hello</>;
+    return (
+        <>
+            <h1>hello</h1>
+        </>
+    );
 };
