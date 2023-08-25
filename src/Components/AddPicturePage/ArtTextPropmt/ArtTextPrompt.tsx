@@ -1,3 +1,5 @@
+import "./ArtTextPromptS.scss";
+
 interface ArtTextPromptProps {
     value: string;
     setValue(description: string): void;
@@ -13,8 +15,9 @@ export const ArtTextPrompt = ({
 }: ArtTextPromptProps) => {
     return (
         <label className="ArtTextPrompt">
-            <div className="text-label">{label ? label : "Prompt"}</div>
-            <input
+            <div className="text-label">{label ? label : ""}</div>
+            <textarea
+                className="text-input"
                 placeholder={
                     placeHolder ? placeHolder : "Ai Art Text Prompt Input"
                 }
