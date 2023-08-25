@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "./AddPicturePageS.scss";
+import { ArtStyles } from "./ArtStyles/ArtStyles";
 import { ArtTextPrompt } from "./ArtTextPropmt/ArtTextPrompt";
 
 export const AddPicturePage = () => {
@@ -18,6 +19,7 @@ export const AddPicturePage = () => {
                         setPictureForm({ ...pictureForm, textPrompt });
                     }}
                 />
+                <ArtStyles />
                 <Button>Render Photo</Button>
             </Form>
         </div>
