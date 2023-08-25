@@ -1,7 +1,25 @@
+import { useState } from "react";
+import { Button, Form } from "react-bootstrap";
+import "./AddPicturePageS.scss";
+import { ArtTextPrompt } from "./ArtTextPropmt/ArtTextPrompt";
+
 export const AddPicturePage = () => {
+    const [pictureForm, setPictureForm] = useState({
+        textPrompt: "",
+    });
+    const { textPrompt } = pictureForm;
+    console.log(pictureForm);
     return (
-        <>
-            <h1>hello</h1>
-        </>
+        <div className="AddPicture">
+            <Form>
+                <ArtTextPrompt
+                    value={textPrompt}
+                    setValue={(textPrompt: string) => {
+                        setPictureForm({ ...pictureForm, textPrompt });
+                    }}
+                />
+                <Button>Render Photo</Button>
+            </Form>
+        </div>
     );
 };
