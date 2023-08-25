@@ -1,7 +1,5 @@
+import "./AddPicturePageS.scss";
+
 export const AddPicturePage = () => {
-    return (
-        <>
-            <h1>hello</h1>
-        </>
-    );
+    return <div className="AddPicture"></div>;
 };
