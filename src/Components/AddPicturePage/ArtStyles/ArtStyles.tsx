@@ -10,6 +10,7 @@ export const ArtStyles = () => {
                 const { name, styleID, picture } = style;
                 return (
                     <ArtStyle
+                        key={index}
                         name={name}
                         picture={picture}
                         styleID={styleID}

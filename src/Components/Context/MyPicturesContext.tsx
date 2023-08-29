@@ -18,6 +18,7 @@ interface Props {
 export const MyPicturesContextProvider = ({ children }: Props) => {
     const [pictures, setPictures] = useState<PictureProps[]>([
         {
+            picture: "",
             upVotes: 0,
             downVotes: 0,
         },
