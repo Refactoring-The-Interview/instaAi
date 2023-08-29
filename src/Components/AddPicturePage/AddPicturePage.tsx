@@ -10,10 +10,11 @@ export const AddPicturePage = () => {
         textPrompt: "",
     });
     const { textPrompt } = pictureForm;
-    console.log(pictureForm);
+
     return (
         <div className="AddPicture">
-            <Form>
+            <h1>Photo</h1>
+            <Form className="add-picture-form">
                 <ArtTextPrompt
                     value={textPrompt}
                     setValue={(textPrompt: string) => {
@@ -22,7 +23,7 @@ export const AddPicturePage = () => {
                 />
                 <ArtStyles />
                 <ArtPublicStatus />
-                <Button>Render Photo</Button>
+                <Button className="renderCall"> Render Photo </Button>
             </Form>
         </div>
     );
