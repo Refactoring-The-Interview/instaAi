@@ -24,7 +24,10 @@ export const AddPicturePage = () => {
                 />
                 <ArtStyles />
                 <ArtPublicStatus />
-                <Button className="renderCall"> Render Photo </Button>
+                <Button className="renderCall" onClick={() => {}}>
+                    {" "}
+                    Render Photo{" "}
+                </Button>
             </Form>
         </div>
     );
