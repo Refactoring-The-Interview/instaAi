@@ -4,6 +4,7 @@ import "./AddPicturePageS.scss";
 import { ArtPublicStatus } from "./ArtPublicStatus/ArtPublicStatus";
 import { ArtStyles } from "./ArtStyles/ArtStyles";
 import { ArtTextPrompt } from "./ArtTextPropmt/ArtTextPrompt";
+import { PhotoRenderArea } from "./PhotoRenderArea/PhotoRenderArea";
 
 export const AddPicturePage = () => {
     const [pictureForm, setPictureForm] = useState({
@@ -13,7 +14,7 @@ export const AddPicturePage = () => {
 
     return (
         <div className="AddPicture">
-            <h1>Photo</h1>
+            <PhotoRenderArea photo={undefined} />
             <Form className="add-picture-form">
                 <ArtTextPrompt
                     value={textPrompt}
