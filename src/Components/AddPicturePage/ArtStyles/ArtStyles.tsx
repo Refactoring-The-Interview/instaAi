@@ -17,30 +17,33 @@ export const ArtStyles = ({
     end = artStyleCatalog.length,
     displayName,
 }: Props) => {
-    const { styleCatalog } = useContext(MyPictureContext);
+    const { styleCatalog, catalogFilterTag } = useContext(MyPictureContext);
 
     return (
         <div className="ArtStyles">
-            {styleCatalog.slice(start, end).map((style, index) => {
-                const { name, styleID, picture } = style;
-                return (
-                    <div>
-                        <ArtStyle
-                            key={index}
-                            name={name}
-                            picture={picture}
-                            styleID={styleID}
-                            promptStrength={0}
-                            isRandom={false}
-                            tags={[]}
-                        />
+            {styleCatalog
+                .slice(start, end)
+                .filter((style) => style.tags.includes(catalogFilterTag))
+                .map((style, index) => {
+                    const { name, styleID, picture } = style;
+                    return (
+                        <div>
+                            <ArtStyle
+                                key={index}
+                                name={name}
+                                picture={picture}
+                                styleID={styleID}
+                                promptStrength={0}
+                                isRandom={false}
+                                tags={[]}
+                            />
 
-                        {displayName && (
-                            <div className="style-name">{name}</div>
-                        )}
-                    </div>
-                );
-            })}
+                            {displayName && (
+                                <div className="style-name">{name}</div>
+                            )}
+                        </div>
+                    );
+                })}
         </div>
     );
 };
