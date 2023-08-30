@@ -1,12 +1,18 @@
+import { artStyleCatalog } from "../../../Apis/artStyleCatalog";
 import { ArtStyle } from "./ArtStyle/ArtStyle";
 import "./ArtStylesS.scss";
-import { artStyleCatalog } from "./artStyleCatalog";
 
 //toDo add off canvas list of all styles
-export const ArtStyles = () => {
+
+interface Props {
+    start: number;
+    end?: number;
+}
+
+export const ArtStyles = ({ start, end = artStyleCatalog.length }: Props) => {
     return (
         <div className="ArtStyles">
-            {artStyleCatalog.slice(0, 8).map((style, index) => {
+            {artStyleCatalog.slice(start, end).map((style, index) => {
                 const { name, styleID, picture } = style;
                 return (
                     <ArtStyle

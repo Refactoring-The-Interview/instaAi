@@ -1,21 +1,21 @@
-import gen1 from "../../../Assets/Styles/3d_general_2.webp";
-import animation1 from "../../../Assets/Styles/animation_1.webp";
-import animation2 from "../../../Assets/Styles/animation_2.webp";
-import charcoal from "../../../Assets/Styles/charcoal_1.jpg";
-import concept from "../../../Assets/Styles/concept_art_2.webp";
-import concept6 from "../../../Assets/Styles/concept_art_6.jpg";
+import gen1 from "../Assets/Styles/3d_general_2.webp";
+import animation1 from "../Assets/Styles/animation_1.webp";
+import animation2 from "../Assets/Styles/animation_2.webp";
+import charcoal from "../Assets/Styles/charcoal_1.jpg";
+import concept from "../Assets/Styles/concept_art_2.webp";
+import concept6 from "../Assets/Styles/concept_art_6.jpg";
 import {
     default as hotpot8,
     default as hotpot9,
-} from "../../../Assets/Styles/hotpot_art_9.webp";
-import logoClean from "../../../Assets/Styles/logo_clean_1.webp";
-import photoGen1 from "../../../Assets/Styles/photo_general_1.webp";
-import photoPort1 from "../../../Assets/Styles/photo_portrait_1.jpg";
-import animePort1 from "../../../Assets/Styles/portrait_anime_1.webp";
-import animePort2 from "../../../Assets/Styles/portrait_anime_2.webp";
-import game7 from "../../../Assets/Styles/portrait_game_7.webp";
-import scifi from "../../../Assets/Styles/scifi_1.webp";
-import steampunk from "../../../Assets/Styles/steampunk.jpg";
+} from "../Assets/Styles/hotpot_art_9.webp";
+import logoClean from "../Assets/Styles/logo_clean_1.webp";
+import photoGen1 from "../Assets/Styles/photo_general_1.webp";
+import photoPort1 from "../Assets/Styles/photo_portrait_1.jpg";
+import animePort1 from "../Assets/Styles/portrait_anime_1.webp";
+import animePort2 from "../Assets/Styles/portrait_anime_2.webp";
+import game7 from "../Assets/Styles/portrait_game_7.webp";
+import scifi from "../Assets/Styles/scifi_1.webp";
+import steampunk from "../Assets/Styles/steampunk.jpg";
 
 //! important
 export interface ArtCatalogProps {
