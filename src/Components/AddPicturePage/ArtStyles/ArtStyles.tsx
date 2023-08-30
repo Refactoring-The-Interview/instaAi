@@ -32,6 +32,7 @@ export const ArtStyles = ({
                             styleID={styleID}
                             promptStrength={0}
                             isRandom={false}
+                            tags={[]}
                         />
 
                         {displayName && (

@@ -18,12 +18,22 @@ import scifi from "../../Assets/Styles/scifi_1.webp";
 import steampunk from "../../Assets/Styles/steampunk.jpg";
 
 //! important
+export enum styleTags {
+    popular,
+    animation,
+    fantasy,
+    Portrait,
+    illustration,
+    all,
+}
+
 export interface ArtCatalogProps {
     picture: any;
     name: string;
     styleID: number; // !*Do NOT change id*!, The ID representing the style of the created image
     promptStrength: number; // How much to modify seedImage. Higher values show less resemblance
     isRandom: boolean; // Whether to create different images for the same prompt, false default
+    tags: styleTags[];
 }
 
 export const artStyleCatalog: ArtCatalogProps[] = [
@@ -33,6 +43,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 43,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: photoGen1,
@@ -40,6 +51,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 49,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: photoPort1,
@@ -47,6 +59,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 50,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: charcoal,
@@ -54,6 +67,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 54,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: steampunk,
@@ -61,6 +75,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 57,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: animation1,
@@ -68,6 +83,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 60,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: animation2,
@@ -75,6 +91,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 61,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: scifi,
@@ -82,6 +99,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 64,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: logoClean,
@@ -89,6 +107,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 67,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: concept,
@@ -96,6 +115,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 71,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: animePort1,
@@ -103,6 +123,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 107,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: animePort2,
@@ -110,6 +131,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 108,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: concept6,
@@ -117,6 +139,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 126,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: hotpot8,
@@ -124,6 +147,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 139,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: hotpot9,
@@ -131,6 +155,7 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 140,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
     {
         picture: game7,
@@ -138,5 +163,6 @@ export const artStyleCatalog: ArtCatalogProps[] = [
         styleID: 143,
         promptStrength: 0,
         isRandom: false,
+        tags: [styleTags.popular],
     },
 ];
