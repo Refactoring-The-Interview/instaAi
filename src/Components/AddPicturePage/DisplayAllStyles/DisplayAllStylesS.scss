@@ -1,0 +1,13 @@
+.DisplayAllStyles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .displayAll {
+        width: 30rem;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 2rem;
+        padding-top: 0.5rem;
+    }
+}
