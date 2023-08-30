@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { Badge } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { ArtStyles } from "../ArtStyles/ArtStyles";
+import "./DisplayAllStylesS.scss";
 
 export const DisplayAllStyles = () => {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -16,11 +18,12 @@ export const DisplayAllStyles = () => {
 
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title>
+                        <Badge bg="primary">All art Styles</Badge>
+                    </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the
-                    elements you have chosen. Like, text, images, lists, etc.
+                    <ArtStyles start={0} displayName={true} />
                 </Offcanvas.Body>
             </Offcanvas>
         </>

@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import { ArtCatalogProps } from "../../../../Apis/artStyleCatalog";
+import { ArtCatalogProps } from "../../../Context/artStyleCatalog";
 import "./ArtStyleS.scss";
 
 // toDo, on click update the api package to send

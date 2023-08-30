@@ -1,13 +1,18 @@
 import { ReactNode, createContext, useState } from "react";
+import { ArtCatalogProps, artStyleCatalog } from "./artStyleCatalog";
 import { PictureProps } from "./types";
 
 interface MyPictureContextProperties {
     pictures: PictureProps[];
+    styleCatalog: ArtCatalogProps[];
+    setStyleCatalog(styleCatalog: ArtCatalogProps[]): void;
     setPictures(pictures: PictureProps[]): void;
 }
 
 export const MyPictureContext = createContext<MyPictureContextProperties>({
     pictures: [],
+    styleCatalog: [],
+    setStyleCatalog: () => {},
     setPictures: () => {},
 });
 
@@ -23,9 +28,13 @@ export const MyPicturesContextProvider = ({ children }: Props) => {
             downVotes: 0,
         },
     ]);
+    const [styleCatalog, setStyleCatalog] =
+        useState<ArtCatalogProps[]>(artStyleCatalog);
 
     return (
-        <MyPictureContext.Provider value={{ pictures, setPictures }}>
+        <MyPictureContext.Provider
+            value={{ pictures, setPictures, styleCatalog, setStyleCatalog }}
+        >
             {children}
         </MyPictureContext.Provider>
     );
