@@ -4,6 +4,7 @@ import "./AddPicturePageS.scss";
 import { ArtPublicStatus } from "./ArtPublicStatus/ArtPublicStatus";
 import { ArtStyles } from "./ArtStyles/ArtStyles";
 import { ArtTextPrompt } from "./ArtTextPropmt/ArtTextPrompt";
+import { DisplayAllStyles } from "./DisplayAllStyles/DisplayAllStyles";
 import { PhotoRenderArea } from "./PhotoRenderArea/PhotoRenderArea";
 
 export const AddPicturePage = () => {
@@ -22,7 +23,8 @@ export const AddPicturePage = () => {
                         setPictureForm({ ...pictureForm, textPrompt });
                     }}
                 />
-                <ArtStyles />
+                <ArtStyles start={0} end={8} />
+                <DisplayAllStyles />
                 <ArtPublicStatus />
                 <Button className="renderCall" onClick={() => {}}>
                     {" "}
