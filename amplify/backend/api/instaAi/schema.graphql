@@ -1,0 +1,22 @@
+type PhotoLibrary @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Photos: [Photo] @hasMany(indexName: "byPhotoLibrary", fields: ["id"])
+}
+
+enum STYLETAGS {
+  ALL
+  POPULAR
+  ANIMATION
+  FANTASY
+  PORTRAIT
+  ILLUSTRATION
+}
+
+type Photo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  styleID: Int
+  isRandom: Boolean
+  tags: STYLETAGS
+  photolibraryID: ID! @index(name: "byPhotoLibrary")
+}

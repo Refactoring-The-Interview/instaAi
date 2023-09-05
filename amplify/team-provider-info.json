@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify4ad44cc9ec974-staging-185330-authRole",
+      "UnauthRoleArn": "arn:aws:iam::722921029415:role/amplify-amplify4ad44cc9ec974-staging-185330-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::722921029415:role/amplify-amplify4ad44cc9ec974-staging-185330-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify4ad44cc9ec974-staging-185330-deployment",
+      "UnauthRoleName": "amplify-amplify4ad44cc9ec974-staging-185330-unauthRole",
+      "StackName": "amplify-amplify4ad44cc9ec974-staging-185330",
+      "StackId": "arn:aws:cloudformation:us-east-1:722921029415:stack/amplify-amplify4ad44cc9ec974-staging-185330/81a179f0-4c1d-11ee-9e89-0a241c6673e7",
+      "AmplifyAppId": "d2eo2tyh0pwk9x"
+    },
+    "categories": {
+      "auth": {
+        "instaAi": {}
+      },
+      "storage": {
+        "s3instaaiphotolibrary": {}
+      }
+    }
+  }
+}
