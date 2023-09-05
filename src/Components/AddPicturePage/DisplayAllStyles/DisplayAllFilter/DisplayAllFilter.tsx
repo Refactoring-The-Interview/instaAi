@@ -6,8 +6,8 @@ export const DisplayAllFilter = () => {
 
     return (
         <div className="DisplayAllFilter">
-            {styles.map((tag) => {
-                return <FilterOption tag={tag} />;
+            {styles.map((tag, index) => {
+                return <FilterOption tag={tag} key={index} />;
             })}
         </div>
     );

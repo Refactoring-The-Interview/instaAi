@@ -6,6 +6,7 @@ import { ArtStyles } from "./ArtStyles/ArtStyles";
 import { ArtTextPrompt } from "./ArtTextPropmt/ArtTextPrompt";
 import { DisplayAllStyles } from "./DisplayAllStyles/DisplayAllStyles";
 import { PhotoRenderArea } from "./PhotoRenderArea/PhotoRenderArea";
+import { get } from "../../Apis/GetPhoto";
 
 export const AddPicturePage = () => {
     const [pictureForm, setPictureForm] = useState({
@@ -26,7 +27,12 @@ export const AddPicturePage = () => {
                 <ArtStyles start={0} end={8} />
                 <DisplayAllStyles />
                 <ArtPublicStatus />
-                <Button className="renderCall" onClick={() => {}}>
+                <Button
+                    className="renderCall"
+                    onClick={() => {
+                        get("https://api.hotpot.ai/make-art");
+                    }}
+                >
                     {" "}
                     Render Photo{" "}
                 </Button>
