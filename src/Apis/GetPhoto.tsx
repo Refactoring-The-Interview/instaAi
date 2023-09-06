@@ -4,13 +4,6 @@ export enum FetchMethods {
     delete = "delete",
 }
 
-
-
-// "start": "react-scripts start",
-// "build": "react-scripts build",
-// "test": "react-scripts test",
-// "eject": "react-scripts eject",
-
 export const get = async (url: string, options?: RequestInit) => {
     let photo;
     const requestOptions = {
