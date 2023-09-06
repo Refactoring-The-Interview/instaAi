@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3instaaiphotolibrary",
+  "bucketName": "instaai-photo-library",
+  "policyUUID": "05394e38",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ",
+    "CREATE_AND_UPDATE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ]
+}
