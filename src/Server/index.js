@@ -22,10 +22,9 @@ app.get("/", (req, res) => {
     res.status(200).send("Hello server is running").end();
 });
 
-// Storage.list("photos/") // for listing ALL files without prefix, pass '' instead
-//     .then((result) => console.log(result))
-//     .catch((err) => console.log(err));
-// // PORT
+app.get("/test", (req, res) => {
+    res.status(200).send({ msg: "hello from the server" });
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on PORT: ${PORT}`);
