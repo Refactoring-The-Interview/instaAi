@@ -23,10 +23,6 @@ app.get("/", (req, res) => {
     res.status(200).send("Hello server is running").end();
 });
 
-app.post("/", (req, res) => {
-    res.send("This is home page with post request.");
-});
-
 Storage.list("photos/") // for listing ALL files without prefix, pass '' instead
     .then((result) => console.log(result))
     .catch((err) => console.log(err));
