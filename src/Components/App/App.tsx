@@ -1,8 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
-import { DataStore } from "aws-amplify";
 import { Paths } from "../../Types/routerTypes";
-import { PhotoLibrary } from "../../models";
 import { AddPicturePage } from "../AddPicturePage/AddPicturePage";
 import { MyPicturesContextProvider } from "../Context/MyPicturesContext";
 import { FooterNav } from "../NavBars/FooterNav/FooterNav";
