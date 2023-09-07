@@ -4,11 +4,11 @@ const app = express();
 const nocache = require("nocache");
 const path = require("path");
 const bodyParser = require("body-parser");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const { createProxyMiddleware } = require("http-proxy-middleware");
-app.use(createProxyMiddleware("/api/**", { target: "http://localhost:3000" }));
+app.use(createProxyMiddleware("/api/**", { target: "http://localhost:4000" }));
 app.use(nocache());
 
 if (process.env.NODE_ENV === "production") {

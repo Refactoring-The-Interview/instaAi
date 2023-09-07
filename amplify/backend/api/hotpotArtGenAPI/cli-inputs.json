@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/make-art": {
+      "name": "/make-art",
+      "lambdaFunction": "instaAiHotPot",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

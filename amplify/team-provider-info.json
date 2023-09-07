@@ -17,6 +17,16 @@
       },
       "storage": {
         "s3instaaiphotolibrary": {}
+      },
+      "function": {
+        "instaAiHotPot": {
+          "deploymentBucketName": "amplify-amplify4ad44cc9ec974-staging-185330-deployment",
+          "s3Key": "amplify-builds/instaAiHotPot-42426d5479307542542b-build.zip"
+        }
+      },
+      "api": {
+        "instaAi": {},
+        "hotpotArtGenAPI": {}
       }
     }
   }

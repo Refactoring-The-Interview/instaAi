@@ -1,5 +1,19 @@
 {
   "api": {
+    "hotpotArtGenAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "instaAiHotPot"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "instaAi": {
       "dependsOn": [],
       "output": {
@@ -48,6 +62,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "instaAiHotPot": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_instaAiHotPot_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "instaAiHotPot"
+        }
+      ]
+    },
+    "AMPLIFY_function_instaAiHotPot_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "instaAiHotPot"
+        }
+      ]
     }
   },
   "storage": {

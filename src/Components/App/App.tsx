@@ -7,6 +7,8 @@ import { HeaderNav } from "../NavBars/HeaderNav/HeaderNav";
 import "./AppS.scss";
 
 export const App = () => {
+    // get("http://localhost:4000");
+
     return (
         <div className="App">
             <MyPicturesContextProvider>
