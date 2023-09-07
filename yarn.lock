@@ -240,7 +240,7 @@
     lodash "4.17.21"
     xstate "^4.33.6"
 
-"@aws-amplify/ui-react@^4.0.1":
+"@aws-amplify/ui-react@^4.6.0":
   version "4.6.5"
   resolved "https://registry.yarnpkg.com/@aws-amplify/ui-react/-/ui-react-4.6.5.tgz#293eafb46acfeed36d83a2b71ce003abdb6fabe5"
   integrity sha512-62pDsaQsQ49kMvwS67bGTrHMCvbCUdsuuismkwRhqmzUd21TVQ9U6Yh3FO2Ap/WRhbL80ma156A+td4/IRhofw==

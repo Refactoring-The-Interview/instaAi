@@ -22,8 +22,7 @@ const useFetch = async () => {
 };
 
 export const AddPicturePage = () => {
-    const test = useFetch();
-    console.log(test);
+    // const test = useFetch();
 
     const [pictureForm, setPictureForm] = useState({
         textPrompt: "",
