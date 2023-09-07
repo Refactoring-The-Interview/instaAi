@@ -7,7 +7,7 @@ import { HeaderNav } from "../NavBars/HeaderNav/HeaderNav";
 import "./AppS.scss";
 
 export const App = () => {
-    // get("http://localhost:4000");
+    // get();
 
     return (
         <div className="App">

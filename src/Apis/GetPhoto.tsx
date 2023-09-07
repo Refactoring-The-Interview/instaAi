@@ -6,7 +6,7 @@ export enum FetchMethods {
     delete = "delete",
 }
 
-export const get = async (url: string, options?: RequestInit) => {
+export const get = async (url?: string, options?: RequestInit) => {
     // let photo;
     // const requestOptions = {
     //     method: FetchMethods.post,
