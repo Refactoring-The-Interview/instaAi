@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { get } from "../../Apis/GetPhoto";
 import { Paths } from "../../Types/routerTypes";
 import { AddPicturePage } from "../AddPicturePage/AddPicturePage";
 import { MyPicturesContextProvider } from "../Context/MyPicturesContext";
@@ -7,7 +8,7 @@ import { HeaderNav } from "../NavBars/HeaderNav/HeaderNav";
 import "./AppS.scss";
 
 export const App = () => {
-    // get();
+    get();
 
     return (
         <div className="App">
