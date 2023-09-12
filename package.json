@@ -28,6 +28,7 @@
         "update-browserslist-db": "^1.0.11",
         "web-vitals": "^2.1.4"
     },
+    "proxy": "https://sb-deployingbackend.d2eo2tyh0pwk9x.amplifyapp.com/",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",

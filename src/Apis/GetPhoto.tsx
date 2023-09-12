@@ -13,10 +13,13 @@ export const get = async (url?: string, options?: RequestInit) => {
         "https://1tpsmk50ea.execute-api.us-east-1.amazonaws.com/staging/make-art";
     const myInit = {
         headers: {
+            origin: "http://localhost:3000",
+            credentials: true,
+            "Access-Control-Allow-Origin": "origin",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
             Authorization: "RNtBzMwYXd3CFQmzTVIg6MUXzosqgjuVVUwJtiVqOQNUaBwMst",
             "Content-Type": "application/json",
             cache: "no-cache",
-            "Access-Control-Allow-Origin": "*",
         }, // OPTIONAL
         footer: {
             inputText: "A pig in the style of Starry Night by Vincent Van Gogh",
