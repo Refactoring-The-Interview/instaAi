@@ -9,8 +9,9 @@ export const get = async (url: string, options?: RequestInit) => {
     const requestOptions = {
         method: FetchMethods.post,
         headers: {
-            "Content-Type": "application/json",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
             Authorization: "RNtBzMwYXd3CFQmzTVIg6MUXzosqgjuVVUwJtiVqOQNUaBwMst",
+            "Content-Type": "application/json",
             cache: "no-cache",
             "Access-Control-Allow-Origin": "*",
         },
