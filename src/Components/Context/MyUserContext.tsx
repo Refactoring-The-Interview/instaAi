@@ -7,10 +7,10 @@ interface MyUserContextProperties {
     setUser(user: UserProps): void;
 }
 
-const defaultUser = {
+export const defaultUser = {
     userId: 0,
     name: "Sam Brandon",
-    bio: "n/a",
+    bio: "Frontend Engineer with a desire for creating modern user experiences, with the ability to design and develop JavaScript-based web applications. Currently seeking a position that allows meaningful contributions and opportunities for growth.",
     fallows: 300,
     creations: 12,
     favorites: [],
