@@ -1,0 +1,11 @@
+.EditForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+
+    .formSubmit {
+        width: 10rem;
+        margin-top: 1rem;
+    }
+}
