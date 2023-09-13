@@ -23,9 +23,7 @@ export const FooterNav = () => {
                     <Nav.Link eventKey="link-2">Favs</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="navItem">
-                    <Nav.Link eventKey="disabled" disabled>
-                        Profile
-                    </Nav.Link>
+                    <Nav.Link eventKey={Paths.PROFILE}>Profile</Nav.Link>
                 </Nav.Item>
             </Nav>
         </Navbar>
