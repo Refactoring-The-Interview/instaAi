@@ -9,7 +9,7 @@ interface Props {
 export const ImageAndName = ({ name, image }: Props) => {
     return (
         <div className="ImageAndName">
-            <Image src={image} className="image" />
+            <Image src={image} className="image" roundedCircle />
             <div className="name">{name}</div>
         </div>
     );
