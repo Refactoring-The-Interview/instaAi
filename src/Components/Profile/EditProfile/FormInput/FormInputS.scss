@@ -1,0 +1,15 @@
+.FormInput {
+    display: flex;
+    width: 20rem;
+    padding-bottom: 0.5rem;
+    justify-content: space-between;
+
+    .label {
+        font-size: 1.25rem;
+        border-bottom: 1px solid black;
+    }
+
+    .input {
+        width: 15rem;
+    }
+}
