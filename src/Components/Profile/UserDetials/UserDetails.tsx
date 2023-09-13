@@ -1,5 +1,5 @@
-import { Image } from "react-bootstrap";
 import { UserProps } from "../../Context/types";
+import { ImageAndName } from "./ImageAndName/ImageAndName";
 import "./UserDetailsS.scss";
 import { UserFallowsAndCreations } from "./UserFallowsAndCeations/UserFallowsAndCreations";
 
@@ -11,10 +11,7 @@ export const UserDetails = ({ user }: UserDetailsProps) => {
     const { name, bio, fallows, creations, favorites, image } = user;
     return (
         <div className="UserDetails">
-            <div className="imageAndName">
-                <Image src={image} className="image" />
-                <div className="name">{name}</div>
-            </div>
+            <ImageAndName name={name} image={image} />
             <UserFallowsAndCreations creations={creations} fallows={fallows} />
         </div>
     );
