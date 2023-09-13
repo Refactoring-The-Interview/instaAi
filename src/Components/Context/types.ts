@@ -7,6 +7,7 @@ export interface PictureProps {
 export interface UserProps {
     userId: number;
     name: string;
+    image: string;
     bio?: string;
     fallows: number;
     creations: number;

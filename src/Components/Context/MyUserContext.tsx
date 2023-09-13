@@ -1,4 +1,5 @@
-import { Children, ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useState } from "react";
+import robot from "../../Assets/Images/RoboProfilePic.jpeg";
 import { UserProps } from "./types";
 
 interface MyUserContextProperties {
@@ -8,11 +9,12 @@ interface MyUserContextProperties {
 
 const defaultUser = {
     userId: 0,
-    name: "",
-    bio: "",
-    fallows: 0,
-    creations: 0,
+    name: "Sam Brandon",
+    bio: "n/a",
+    fallows: 300,
+    creations: 12,
     favorites: [],
+    image: robot,
 };
 
 export const MyUserContext = createContext<MyUserContextProperties>({
