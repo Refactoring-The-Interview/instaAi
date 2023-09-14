@@ -30,6 +30,9 @@ export const MyPicturesContextProvider = ({ children }: Props) => {
             picture: "",
             upVotes: 0,
             downVotes: 0,
+            id: 0,
+            name: "",
+            isFavorite: false,
         },
     ]);
     const [styleCatalog, setStyleCatalog] =

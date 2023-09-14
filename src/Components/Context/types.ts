@@ -1,7 +1,10 @@
 export interface PictureProps {
-    picture: any;
+    picture: string;
     upVotes: number;
     downVotes: number;
+    id: number;
+    name: string;
+    isFavorite: boolean;
 }
 
 export interface UserProps {
