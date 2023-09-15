@@ -18,10 +18,15 @@
 
     .navItem {
         padding: 1rem;
-        border: solid 2px $primary-Blue;
+        border: solid 3px $primary-Blue;
         border-radius: 50%;
     }
 
     .svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1rem;
+        width: 1rem;
     }
 }
