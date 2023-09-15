@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Container, Image, Navbar } from "react-bootstrap";
+import { Paths } from "../../../Types/routerTypes";
 import { MyUserContext } from "../../Context/MyUserContext";
 import "./HeaderNavS.scss";
 
@@ -8,7 +9,7 @@ export const HeaderNav = () => {
     return (
         <Navbar className="Navbar" fixed="top">
             <Container>
-                <Navbar.Brand href="#home" className="NavAppName">
+                <Navbar.Brand href={Paths.HOME} className="NavAppName">
                     InstaAi
                 </Navbar.Brand>
                 <Navbar.Toggle />
