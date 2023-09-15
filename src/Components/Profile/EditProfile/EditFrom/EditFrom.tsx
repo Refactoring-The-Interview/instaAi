@@ -12,7 +12,6 @@ interface Props {
 
 export const EditFrom = ({ user, setUser, handleClose }: Props) => {
     const [newUser, setNewUser] = useState(user);
-    const { name, image, bio } = newUser;
 
     return (
         <Form
