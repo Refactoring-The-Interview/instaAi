@@ -27,7 +27,7 @@ export const ArtStyles = ({
                 .map((style, index) => {
                     const { name, styleID, picture } = style;
                     return (
-                        <div>
+                        <div key={index}>
                             <ArtStyle
                                 key={index}
                                 name={name}
