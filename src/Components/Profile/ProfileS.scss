@@ -1,14 +1,11 @@
 .Profile {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     height: 100vh;
 
     .pictureProfile {
         padding-left: 1rem;
-        width: 100vw;
-        height: 100vh;
-        overflow: scroll;
     }
 }
