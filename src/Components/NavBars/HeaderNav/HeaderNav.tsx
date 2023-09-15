@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { Container, Image, Navbar } from "react-bootstrap";
+import { ReactSVG } from "react-svg";
+import setting from "../../../Assets/Svgs/equalizer.svg";
 import { Paths } from "../../../Types/routerTypes";
 import { MyUserContext } from "../../Context/MyUserContext";
 import "./HeaderNavS.scss";
@@ -19,6 +21,8 @@ export const HeaderNav = () => {
                         src={user.image}
                         roundedCircle
                     />
+
+                    <ReactSVG src={setting} className="svg" />
                 </Navbar.Collapse>
             </Container>
         </Navbar>
