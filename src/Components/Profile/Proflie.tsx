@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { getPhotoLibrary } from "../../Testing/TestingAPICall/getPhotoLibrary";
-import { MyPictureContext } from "../Context/MyPicturesContext";
 import { MyUserContext } from "../Context/MyUserContext";
 import { RenderPictures } from "../RenderPictures/RenderPictures";
 import { EditProfile } from "./EditProfile/EditProfile";
@@ -9,8 +8,7 @@ import { UserDetails } from "./UserDetials/UserDetails";
 
 export const Profile = () => {
     const dummyLib = getPhotoLibrary();
-    const { user, setUser } = useContext(MyUserContext);
-    const { pictures, setPictures } = useContext(MyPictureContext);
+    const { user } = useContext(MyUserContext);
 
     return (
         <div className="Profile">

@@ -29,7 +29,11 @@ export const EditProfile = () => {
                     <Offcanvas.Title>Edit Profile</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <EditFrom user={user} setUser={setUser} />
+                    <EditFrom
+                        user={user}
+                        setUser={setUser}
+                        handleClose={handleClose}
+                    />
                 </Offcanvas.Body>
             </Offcanvas>
         </div>

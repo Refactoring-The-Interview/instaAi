@@ -4,6 +4,7 @@ import { Paths } from "../../Types/routerTypes";
 import { AddPicturePage } from "../AddPicturePage/AddPicturePage";
 import { MyPicturesContextProvider } from "../Context/MyPicturesContext";
 import { MyUserContextProvider } from "../Context/MyUserContext";
+import { Home } from "../Home/Home";
 import { FooterNav } from "../NavBars/FooterNav/FooterNav";
 import { HeaderNav } from "../NavBars/HeaderNav/HeaderNav";
 import { Profile } from "../Profile/Proflie";
@@ -17,7 +18,7 @@ export const App = () => {
                     <HeaderNav />
                     <FooterNav />
                     <Routes>
-                        <Route path={Paths.HOME} element={<></>} />
+                        <Route path={Paths.HOME} element={<Home />} />
                         <Route
                             path={Paths.ADDPICTUREPAGE}
                             element={<AddPicturePage />}

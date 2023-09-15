@@ -5,6 +5,7 @@ export enum FetchMethods {
 }
 
 export const get = async (url: string, options?: RequestInit) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let photo;
     const requestOptions = {
         method: FetchMethods.post,
