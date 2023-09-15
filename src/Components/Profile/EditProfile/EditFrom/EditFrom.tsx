@@ -7,9 +7,10 @@ import { FormBody } from "./FormBody/FormBody";
 interface Props {
     user: UserProps;
     setUser(user: UserProps): void;
+    handleClose(): void;
 }
 
-export const EditFrom = ({ user, setUser }: Props) => {
+export const EditFrom = ({ user, setUser, handleClose }: Props) => {
     const [newUser, setNewUser] = useState(user);
     const { name, image, bio } = newUser;
 
@@ -26,6 +27,9 @@ export const EditFrom = ({ user, setUser }: Props) => {
                 type="submit"
                 variant="outline-primary"
                 className="formSubmit"
+                onClick={() => {
+                    handleClose();
+                }}
             >
                 Done
             </Button>
