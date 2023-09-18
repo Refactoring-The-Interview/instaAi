@@ -1,8 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 
+import { useContext } from "react";
+import { getPhotoLibrary } from "../../Testing/TestingAPICall/getPhotoLibrary";
 import { Paths } from "../../Types/routerTypes";
 import { AddPicturePage } from "../AddPicturePage/AddPicturePage";
-import { MyPicturesContextProvider } from "../Context/MyPicturesContext";
+import {
+    MyPictureContext,
+    MyPicturesContextProvider,
+} from "../Context/MyPicturesContext";
 import { MyUserContextProvider } from "../Context/MyUserContext";
 import { Home } from "../Home/Home";
 import { FooterNav } from "../NavBars/FooterNav/FooterNav";

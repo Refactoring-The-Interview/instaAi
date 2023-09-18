@@ -5,6 +5,7 @@ export interface PictureProps {
     id: number;
     name: string;
     isFavorite: boolean;
+    comments?: string[];
 }
 
 export interface UserProps {
