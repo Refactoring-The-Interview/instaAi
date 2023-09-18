@@ -1,4 +1,5 @@
 import { ReactNode, createContext, useState } from "react";
+import { getPhotoLibrary } from "../../Testing/TestingAPICall/getPhotoLibrary";
 import { ArtCatalogProps, artStyleCatalog, styleTags } from "./artStyleCatalog";
 import { PictureProps } from "./types";
 
@@ -25,16 +26,7 @@ interface Props {
 }
 
 export const MyPicturesContextProvider = ({ children }: Props) => {
-    const [pictures, setPictures] = useState<PictureProps[]>([
-        {
-            picture: "",
-            upVotes: 0,
-            downVotes: 0,
-            id: 0,
-            name: "",
-            isFavorite: false,
-        },
-    ]);
+    const [pictures, setPictures] = useState<PictureProps[]>(getPhotoLibrary());
     const [styleCatalog, setStyleCatalog] =
         useState<ArtCatalogProps[]>(artStyleCatalog);
 

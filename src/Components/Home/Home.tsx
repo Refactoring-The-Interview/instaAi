@@ -1,13 +1,18 @@
-import { getPhotoLibrary } from "../../Testing/TestingAPICall/getPhotoLibrary";
+import { useContext, useState } from "react";
+import { MyPictureContext } from "../Context/MyPicturesContext";
 import { RenderPictures } from "../RenderPictures/RenderPictures";
 import "./HomeS.scss";
 
 export const Home = () => {
-    const dummyLib = getPhotoLibrary();
+    const { pictures, setPictures } = useContext(MyPictureContext);
+    const [currentPictures, setCurrentPictures] = useState(pictures);
 
     return (
         <div className="Home">
-            <RenderPictures pictures={dummyLib} />
+            <RenderPictures
+                pictures={currentPictures}
+                setPictures={setPictures}
+            />
         </div>
     );
 };
