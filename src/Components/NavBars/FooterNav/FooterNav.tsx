@@ -31,7 +31,7 @@ export const FooterNav = () => {
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="navItem">
-                    <Nav.Link eventKey={"/"}>
+                    <Nav.Link eventKey={Paths.FEED}>
                         <ReactSVG src={film} className="svg" />
                     </Nav.Link>
                 </Nav.Item>
