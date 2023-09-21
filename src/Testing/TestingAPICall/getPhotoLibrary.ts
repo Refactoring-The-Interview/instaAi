@@ -18,6 +18,43 @@ import tree from "../TestingPhotoSet/tree.png";
 // id: number;
 // name: string;
 // isFavorite: boolean;
+const comments = [
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+];
 
 export const getPhotoLibrary = () => {
     const Library: PictureProps[] = [
@@ -28,6 +65,7 @@ export const getPhotoLibrary = () => {
             id: 0,
             name: "Lion",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: lionF,
@@ -36,6 +74,7 @@ export const getPhotoLibrary = () => {
             id: 1,
             name: "Lion Full",
             isFavorite: true,
+            comments: comments,
         },
         {
             picture: animeMan,
@@ -44,6 +83,7 @@ export const getPhotoLibrary = () => {
             id: 2,
             name: "Veteran adventurer",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: girl,
@@ -52,6 +92,7 @@ export const getPhotoLibrary = () => {
             id: 3,
             name: "Anime Girl",
             isFavorite: true,
+            comments: comments,
         },
         {
             picture: girl2,
@@ -60,6 +101,7 @@ export const getPhotoLibrary = () => {
             id: 4,
             name: "Anime Girl blond",
             isFavorite: true,
+            comments: comments,
         },
         {
             picture: superman1,
@@ -68,6 +110,7 @@ export const getPhotoLibrary = () => {
             id: 5,
             name: "Super Man",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: superman2,
@@ -76,6 +119,7 @@ export const getPhotoLibrary = () => {
             id: 6,
             name: "Super Man portrait",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: car,
@@ -84,6 +128,7 @@ export const getPhotoLibrary = () => {
             id: 7,
             name: "car",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: tree,
@@ -92,6 +137,7 @@ export const getPhotoLibrary = () => {
             id: 8,
             name: "tree",
             isFavorite: true,
+            comments: comments,
         },
         {
             picture: town,
@@ -100,6 +146,7 @@ export const getPhotoLibrary = () => {
             id: 9,
             name: "town",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: knight,
@@ -108,6 +155,7 @@ export const getPhotoLibrary = () => {
             id: 10,
             name: "Knight Logo",
             isFavorite: false,
+            comments: comments,
         },
         {
             picture: logo,
@@ -116,6 +164,7 @@ export const getPhotoLibrary = () => {
             id: 11,
             name: "Logo",
             isFavorite: false,
+            comments: comments,
         },
     ];
 
