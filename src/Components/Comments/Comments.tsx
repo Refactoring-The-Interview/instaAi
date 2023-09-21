@@ -16,7 +16,7 @@ export const Comments = ({ comments }: Props) => {
                 </div>
             )}
 
-            <ViewAllComments />
+            <ViewAllComments comments={comments} />
         </div>
     );
 };

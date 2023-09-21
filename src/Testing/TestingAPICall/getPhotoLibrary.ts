@@ -54,6 +54,111 @@ const comments = [
         id: 0,
         liked: 12,
     },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
+    {
+        name: "user123",
+        comment:
+            "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.",
+        id: 0,
+        liked: 12,
+    },
 ];
 
 export const getPhotoLibrary = () => {

@@ -1,10 +1,17 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { PictureComments } from "../../Context/types";
+import { AddComment } from "../AddComment/AddComment";
+import { Comment } from "./Comment/Comment";
+import "./ViewAllCommentsS.scss";
 
-export const ViewAllComments = () => {
+interface Props {
+    comments: PictureComments[] | undefined;
+}
+
+export const ViewAllComments = ({ comments }: Props) => {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -20,11 +27,17 @@ export const ViewAllComments = () => {
 
             <Offcanvas show={show} onHide={handleClose} placement="bottom">
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title>Viewing All Comments</Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the
-                    elements you have chosen. Like, text, images, lists, etc.
+                <Offcanvas.Body className="viewAllCommentsBody">
+                    <div className="comments">
+                        {comments?.map((item, index) => {
+                            return <Comment currentComment={item} />;
+                        })}
+                    </div>
+                    <div className="addComment">
+                        <AddComment />
+                    </div>
                 </Offcanvas.Body>
             </Offcanvas>
         </div>
