@@ -21,19 +21,4 @@
         height: 10rem;
         padding: 1px;
     }
-
-    .votes {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .vote {
-        padding-top: 1px;
-        font-size: 1.2rem;
-    }
-
-    .heart {
-        cursor: pointer;
-    }
 }

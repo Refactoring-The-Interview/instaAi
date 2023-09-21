@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Image } from "react-bootstrap";
 import { PictureProps } from "../../Context/types";
+import { VoteAndFav } from "../VoteAndFav/VoteAndFav";
 
 interface Props {
     pic: PictureProps;
@@ -8,27 +9,12 @@ interface Props {
 
 export const RenderPicture = ({ pic }: Props) => {
     const [currentPic, setCurrentPic] = useState(pic);
-    let { picture, name, downVotes, upVotes, isFavorite } = currentPic;
+    let { picture, name } = currentPic;
 
     return (
         <div className="picture">
             <Image src={picture} alt={name} className="image" />
-            <div className="votes">
-                <div className="vote">⬆︎{upVotes}</div>
-                <div className="vote">⬇︎{downVotes}</div>
-                <h5
-                    className="heart"
-                    onClick={() => {
-                        isFavorite = !isFavorite;
-                        setCurrentPic({
-                            ...currentPic,
-                            isFavorite,
-                        });
-                    }}
-                >
-                    {isFavorite ? "♥︎" : "♡"}
-                </h5>
-            </div>
+            <VoteAndFav currentPic={currentPic} setCurrentPic={setCurrentPic} />
         </div>
     );
 };
